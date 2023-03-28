@@ -18,6 +18,7 @@ local plugins = {
     'dracula/vim',
     lazy = false,
   },
+  'marko-cerovac/material.nvim',
   'nvim-tree/nvim-tree.lua',
   'nvim-tree/nvim-web-devicons',
   'nvim-lualine/lualine.nvim',
