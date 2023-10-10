@@ -18,17 +18,29 @@ local plugins = {
     'dracula/vim',
     lazy = false,
   },
+  { 
+    "bluz71/vim-moonfly-colors", 
+    name = "moonfly", 
+    lazy = false, 
+    priority = 1000 
+  },
+  { 
+    "bluz71/vim-nightfly-colors", 
+    name = "nightfly", 
+    lazy = false, 
+    priority = 1000 
+  },
   'marko-cerovac/material.nvim',
   'nvim-tree/nvim-tree.lua',
   'nvim-tree/nvim-web-devicons',
   'nvim-lualine/lualine.nvim',
   'nvim-treesitter/nvim-treesitter',
-  'bluz71/vim-nightfly-colors',
   'vim-test/vim-test',
   'lewis6991/gitsigns.nvim',
   'preservim/vimux',
   'christoomey/vim-tmux-navigator',
   'tpope/vim-fugitive',
+  'tpope/vim-surround',
   -- completion
   'hrsh7th/nvim-cmp',
   'hrsh7th/cmp-nvim-lsp',
@@ -36,12 +48,23 @@ local plugins = {
   'saadparwaiz1/cmp_luasnip',
   "rafamadriz/friendly-snippets",
   "github/copilot.vim",
-  "williamboman/mason.nvim",
-  "neovim/nvim-lspconfig",
-  "williamboman/mason-lspconfig.nvim",
   "glepnir/lspsaga.nvim",
+
   {
-	  'nvim-telescope/telescope.nvim',
+    'stevearc/oil.nvim',
+    opts = {},
+    -- Optional dependencies
+    dependencies = { "nvim-tree/nvim-web-devicons" },
+  },
+  
+  {
+    "williamboman/mason.nvim",
+    "williamboman/mason-lspconfig.nvim",
+    "neovim/nvim-lspconfig",
+  },
+  
+  {
+    'nvim-telescope/telescope.nvim',
 	  tag = '0.1.0',
 	  dependencies = { {'nvim-lua/plenary.nvim'} }
   }
